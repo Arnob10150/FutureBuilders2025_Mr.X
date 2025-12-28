@@ -6,8 +6,8 @@
 
 *Team Members:*
 - Arnob Aich Anurag - Web Developer + AI Integration + Planning
-- Sadia Sultana - AI Trainer
-- Naim Islam - Coordinator
+- Sadia Sultana - AI Trainer + BrainStorming
+- Naim Islam - Coordinator + Planning
 
 ---
 
