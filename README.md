@@ -89,3 +89,8 @@ HealthBridge Bangladesh is an offline-first Progressive Web Application that bri
 - Optimized bundle size with Vite
 - Efficient data structures with Drizzle ORM
 - SQLite for lightweight local database
+
+*Demo:*
+
+Uploading Demo.mp4…
+
