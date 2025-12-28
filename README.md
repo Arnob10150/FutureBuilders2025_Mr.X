@@ -6,9 +6,9 @@
 **Team Name:** MR.X
 
 **Team Members:**
-- Member 1: [Arnob Aich Anurag] - [Web Developer+AI integration +planning]
-- Member 2: [Sadia Sultana] - [Ai trainer]
-- Member 3: [Naim Islam] - [Co ordinator]
+- Arnob Aich Anurag - Web Developer + AI Integration + Planning
+- Sadia Sultana - AI Trainer
+- Naim Islam - Coordinator
 
 ---
 
@@ -28,32 +28,30 @@ In the sprawling greens of Bangladesh's hill tracts and the distant stretches of
 
 ## 3. Solution Overview
 
-HealthBridge Bangladesh is an offline-first Progressive Web Application that brings AI-powered medical assistance to rural communities with limited internet connectivity using Google's FLAN-T5 language model.
+HealthBridge Bangladesh is an offline-first Progressive Web Application that brings AI-powered medical assistance to rural communities in Bangladesh with limited internet connectivity using Google's FLAN-T5 language model.
 
 **Core Features:**
-- AI-powered symptom checker using FLAN-T5 (works offline)
-- SMS gateway for feature phone access
-- Health facility finder with cached data
+- AI-powered symptom checker using FLAN-T5 (works offline with quantized model for faster inference)
+- Health records storage with local IndexedDB and server sync
 - Emergency resources and first aid guides
-- Bandwidth-adaptive interface optimized for 2G networks
+- Responsive design optimized for low-bandwidth networks
 
 ---
 
-## 4. Technologies Used
+## 4. Technologies Used(Web Application) 
 
-**Frontend:** React.js, Tailwind CSS, Workbox, IndexedDB API
+**Frontend:** React.js, Tailwind CSS, Vite, React Query, Wouter, Framer Motion
 
-**AI/ML:** FLAN-T5, Transformers.js, TensorFlow.js
+**AI/ML:** FLAN-T5 (Xenova/flan-t5-small), @xenova/transformers (with quantization)
 
-**Backend:** Node.js, Express.js, PostgreSQL, Redis, Twilio SMS API
-
-**Deployment:** Vercel/Netlify, Docker
+**Backend:** Node.js, Express.js, Drizzle ORM, better-sqlite3 (SQLite)
 
 ---
 
 ## 5. AI Tools Disclosure
 
 **Development Tools:**
+- Kilo Code - Code implementation, debugging, optimization, and setup
 - Claude AI - System architecture, code generation, documentation
 - Replit Agent/Bolt.new - Application scaffolding
 - GitHub Copilot - Code completion and suggestions
@@ -61,9 +59,7 @@ HealthBridge Bangladesh is an offline-first Progressive Web Application that bri
 
 **AI Models in Application:**
 - FLAN-T5 (Google) - Medical text understanding and symptom analysis
-- Transformers.js - Browser-based model execution
-- TensorFlow.js - Neural network inference
-- Custom NLP pipeline - Symptom extraction and classification
+- Transformers.js - Browser-based model execution with quantization for performance
 
 ---
 
@@ -73,27 +69,24 @@ HealthBridge Bangladesh is an offline-first Progressive Web Application that bri
 - Service Workers cache all critical assets (app, AI model, medical database)
 - IndexedDB stores user data and responses locally
 - Complete functionality without internet after initial load
+- Quantized FLAN-T5 model for faster offline inference
 
 **Bandwidth Adaptation:**
-- Offline: Full features from cache
-- 2G: Text-only mode, under 50KB per page
-- 3G+: Compressed images, progressive loading
-- 4G+: Full feature set
+- Offline: Full features from cache with local AI processing
+- 2G: Text-only mode, minimal data transfer
+- 3G+: Progressive loading with optimized assets
+- 4G+: Full feature set with server sync
 
-**SMS Fallback:**
-- Users send symptoms via text message
-- AI processes on backend
-- Response sent via SMS
-- No smartphone or internet required
-
-**Sync Queue:**
+**Data Sync:**
+- Local-first data storage using IndexedDB
+- Health records stored locally and synced when online
 - Actions queued when offline
 - Auto-sync when connection restored
 - Network detection with visual indicators
 
 **Optimization:**
-- Gzip/Brotli compression (70-90% size reduction)
+- Model quantization for faster AI inference
 - Code splitting and lazy loading
-- WebP images with fallbacks
-- Model quantization for faster inference
-```
+- Optimized bundle size with Vite
+- Efficient data structures with Drizzle ORM
+- SQLite for lightweight local database
