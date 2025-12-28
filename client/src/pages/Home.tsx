@@ -66,14 +66,14 @@ export default function Home() {
       {/* Recent Activity / Prompt */}
       <div className="max-w-7xl mx-auto px-6 mt-12">
         <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-display font-bold text-slate-800">Why HealthBridge?</h2>
+            <h2 className="text-2xl font-display font-bold text-slate-800">Why Mr.X's HealthBridge?</h2>
         </div>
         
         <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
                  <h3 className="text-xl font-bold text-primary mb-3">Bridging the Gap</h3>
                  <p className="text-slate-600 leading-relaxed mb-6">
-                    In rural Bangladesh, access to doctors can be hours away. HealthBridge provides immediate guidance, helping you decide if you can treat at home or need to travel for urgent care.
+                    In rural Bangladesh, access to doctors can be hours away. Mr.X's HealthBridge provides immediate guidance, helping you decide if you can treat at home or need to travel for urgent care.
                  </p>
                  <div className="flex gap-2">
                     <span className="px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-600 font-medium">Free</span>

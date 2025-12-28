@@ -5,7 +5,7 @@ export default function About() {
         
         <div className="prose prose-slate prose-headings:font-display prose-headings:font-bold prose-h2:text-primary max-w-none bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mt-6 md:mt-0">
           
-          <h1>About HealthBridge</h1>
+          <h1>About Mr.X's HealthBridge</h1>
           
           <h2>The Problem</h2>
           <p>
@@ -14,7 +14,7 @@ export default function About() {
 
           <h2>Our Solution</h2>
           <p>
-            HealthBridge is an offline-first Progressive Web App (PWA) that brings medical expertise to the pocket of every rural citizen. It uses a lightweight, on-device AI expert system to analyze symptoms and provide immediate guidance without needing an internet connection.
+            Mr.X's HealthBridge is an offline-first Progressive Web App (PWA) that brings medical expertise to the pocket of every rural citizen. It uses a lightweight, on-device AI expert system to analyze symptoms and provide immediate guidance without needing an internet connection.
           </p>
 
           {/* MANDATORY AI DISCLOSURE */}
@@ -65,7 +65,7 @@ export default function About() {
           </div>
           
           <h2>Team & Credits</h2>
-          <p>Built for the hackathon by Team HealthBridge.</p>
+          <p>Built for the hackathon by Mr.X.</p>
 
         </div>
       </div>
