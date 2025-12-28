@@ -8,7 +8,7 @@
 **Team Members:**
 - Member 1: [Arnob Aich Anurag] - [Web Developer+AI integration +planning]
 - Member 2: [Sadia Sultana] - [Ai trainer]
--- Member 3: [Naim Islam] - [Co ordinator]
+- Member 3: [Naim Islam] - [Co ordinator]
 
 ---
 
